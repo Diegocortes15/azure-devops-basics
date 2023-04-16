@@ -21,6 +21,18 @@ Hosted Servers are nothing but physical machines where application/Web/Databases
 
 Application server can start at any port in Hosted Server and can be accessed through HostedServerIpAddress: portNumber
 
+#### Apache TomCat Example
+
+1. Go to [Apacge TomCat Official Page](https://tomcat.apache.org/) and download the version that fits your operating system.
+2. Once you have extracted the zip, open de `bin` folder and click on `startup.bat`
+> **Note**
+> If you get an error because port 8080 is in use, please follow [this](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) tutorial to fix it.
+3. Build your project and paste the `.war` generated into `webapps` folder.
+  
+  (e.g. Go to `D:\apache-tomcat-10.1.7-windows-x64\apache-tomcat-10.1.7\webapps` and put the file, for example `webapp.war`)
+
+4. Open your browser and type in the URL: `localhost:8080/webapp`
+
 ### Continuos Integration (CI):
 Continuos Integrations (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
 
